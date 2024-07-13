@@ -1,0 +1,719 @@
+{% extends 'shared/base.html' %}
+
+{% block title %}
+    کیلینیک زیبایی
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="banner-area theme-bg-2 p-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="tpbanner">
+                            <div class="tpbanner-content"><h2 class="tpbanner-title">جراحی پلاستیک</h2><b></b>
+                                <p>هر چه بهتر به نظر برسید بیشتر می شوید. خواهیم ساخت<br>زیبایی کوه ها</p></div>
+                            <ul class="tpbanner-list">
+                                <li class="tpbanner-list-1"><span>01 - جراحی ترمیمی</span></li>
+                                <li class="tpbanner-list-2"><span>02 - آماده سازی جهش</span></li>
+                                <li class="tpbanner-list-3"><span>03 - تغییر شکل گوش</span></li>
+                                <li class="tpbanner-list-4"><span>04 - مراقبت از پوست</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tpbanner-shape p-relative">
+                            <div class="tpbanner-shape-1 d-lg-none d-xl-block"><img
+                                    src="assets/img/banner/banner-1-img-1.png" alt=""></div>
+                            <div class="tpbanner-shape-2 d-none d-lg-block"><img
+                                    src="assets/img/banner/banner-1shape-1.svg" alt=""></div>
+                            <div class="tpbanner-shape-3"><img src="assets/img/banner/banner-1shape-2.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tpbanner-video wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"
+                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                <div class="tpbanner-video-info"><a class="tp-btn" href="appointment.html">قرار ملاقات بگیرید</a></div>
+                <div class="tpbanner-video-thumb p-relative"><img src="assets/img/banner/video-1-bg-1.jpg" alt="">
+                    <div class="tpbanner-video-play"><a class="popup-video"
+                                                        href="https://www.youtube.com/watch?v=TYYf8zYjP5k"><i>
+                        <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 10.268C21.3333 11.0378 21.3333 12.9623 20 13.7321L3.5 23.2583C2.16666 24.0281 0.500001 23.0659 0.500001 21.5263L0.500002 2.47372C0.500002 0.934117 2.16667 -0.0281314 3.5 0.741669L20 10.268Z"
+                                  fill="currentColor"></path>
+                        </svg>
+                    </i></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="about-area pt-130 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="tpsection mt-20">
+                            <div class="tpsection-sub-title"><span>ما کی هستیم</span></div>
+                        </div>
+                        <div class="about-thumb mt-70 wow fadeInUp mb-30" data-wow-duration="1s" data-wow-delay=".6s"
+                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <img src="assets/img/about/about-thumb-1.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="about-wrapper">
+                            <div class="tpsection about-left mb-45"><h2 class="tpsection-title">مراقبت
+                                استثنایی<span><img class="d-none d-md-block wow fadeInRight"
+                                                   src="assets/img/about/about-1-shape-1.png" alt=""
+                                                   data-wow-duration="1s" data-wow-delay=".6s"
+                                                   style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInRight;"></span>تکنولوژی
+                                استثنایی</h2></div>
+                            <div class="about-box">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="about-box-content p-relative mb-30"><p>پیشرفت پزشکی که ذهن شما را به
+                                            جامعه قوی‌تر می‌کند مهم‌ترین شماست.</p><h5 class="about-box-title">ماموریت
+                                            ما</h5>
+                                            <div class="about-box-shape"><img src="assets/img/about/about-1-shape-2.png"
+                                                                              alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="about-box-content about-box-2 p-relative mb-30"><p>پیشرفت پزشکی که
+                                            ذهن شما را به جامعه قوی‌تر می‌کند مهم‌ترین شماست.</p><h5
+                                                class="about-box-title">دیدگاه ما</h5>
+                                            <div class="about-box-shape"><img src="assets/img/about/about-1-shape-2.png"
+                                                                              alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="brand-area pb-140">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="swiper-container brand-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-rtl">
+                            <div class="swiper-wrapper" id="swiper-wrapper-a9f959b7a62ac1aa" aria-live="off"
+                                 style="transform: translate3d(1440px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                     role="group" aria-label="7 / 12" style="width: 330px; margin-left: 30px;"
+                                     data-swiper-slide-index="2">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-3.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                     role="group" aria-label="8 / 12" style="width: 330px; margin-left: 30px;"
+                                     data-swiper-slide-index="3">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-4.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="5 / 12"
+                                     style="width: 330px; margin-left: 30px;" data-swiper-slide-index="0">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-1.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-prev" role="group" aria-label="6 / 12"
+                                     style="width: 330px; margin-left: 30px;" data-swiper-slide-index="1">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-2.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" role="group" aria-label="7 / 12"
+                                     style="width: 330px; margin-left: 30px;" data-swiper-slide-index="2">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-3.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" role="group" aria-label="8 / 12"
+                                     style="width: 330px; margin-left: 30px;" data-swiper-slide-index="3">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-4.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="5 / 12"
+                                     style="width: 330px; margin-left: 30px;" data-swiper-slide-index="0">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-1.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                     role="group" aria-label="6 / 12" style="width: 330px; margin-left: 30px;"
+                                     data-swiper-slide-index="1">
+                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-2.svg"
+                                                                             alt=""></a></div>
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="before-after-area pb-135">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="beforeAfter" data-bareservedstyle="position:static;overflow:visible"
+                             style="position: relative; overflow: hidden;">
+                            <div style="position:relative !important;width:100% !important;height:100%  !important;-webkit-user-select:none;-ms-user-select:none;user-select:none;">
+                                <img src="assets/img/before-after/before-after-1.jpg" alt=""
+                                     data-bareservedstyle="position:static;top:auto;left:auto;width:1290px;height:570px;z-index:auto;float:none"
+                                     style="position: relative; top: 0px; left: 0px; width: 100%;"></div>
+                            <div style="position:absolute !important;width:50% !important;height:100% !important;top:0px !important;right:0px !important;overflow:hidden !important;-webkit-user-select:none;-ms-user-select:none;user-select:none;">
+                                <img src="assets/img/before-after/before-after-2.jpg" alt=""
+                                     data-bareservedstyle="position:static;top:auto;left:auto;width:1290px;height:570px;z-index:auto"
+                                     style="position: absolute; top: 0px; right: 0px; width: 690px; height: 570px; z-index: 1;">
+                            </div>
+                            <div style="background-color: rgb(250, 250, 250); cursor: e-resize; opacity: 0.4; z-index: 2; user-select: none; position: absolute !important; width: 2px !important; height: 100% !important; top: 0px !important; right: 50% !important; overflow: visible !important; transform: translateX(50%) !important;">
+                                <div style="position:relative;width:100%;height:100%;">
+                                    <div style="position: absolute; width: 32px; height: 32px; line-height: 30px; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; background-color: rgb(250, 250, 250);">
+                                        <i style="border-style: solid; border-color: rgb(51, 51, 51); border-image: initial; border-width: 0px 2px 2px 0px; display: inline-block; padding: 3px; transform: rotate(135deg);"></i><i
+                                            style="border-style: solid; border-color: rgb(51, 51, 51); border-image: initial; border-width: 2px 0px 0px 2px; display: inline-block; padding: 3px; transform: rotate(135deg);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="team-area mb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="tpsection mb-65">
+                            <div class="tpsection-sub-title"><span>ما کی هستیم</span></div>
+                            <h2 class="tpsection-title">جراح متخصص ما</h2></div>
+                    </div>
+                    <div class="col-lg-3 align-self-end">
+                        <div class="team-arrows mb-65 d-flex align-items-center justify-content-end">
+                            <div class="team-single-arrow team-button-prev" tabindex="0" role="button"
+                                 aria-label="Previous slide" aria-controls="swiper-wrapper-39e3d3d6831a1f7c"><span><svg
+                                    width="35" height="28" viewBox="0 0 35 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_326_651)"><path
+                                    d="M35 13.9954H3.29442e-07" stroke="currentColor" stroke-width="2"
+                                    stroke-miterlimit="10"></path><path
+                                    d="M13.5547 0C13.5547 7.73574 7.49212 13.9953 -0.000121431 13.9953"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path><path
+                                    d="M-0.000121431 13.9954C7.49212 13.9954 13.5547 20.255 13.5547 27.9907"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path></g><defs><clipPath
+                                    id="clip0_326_651"><rect width="35" height="28" fill="white"
+                                                             transform="matrix(-1 0 0 1 35 0)"></rect></clipPath></defs></svg></span>
+                            </div>
+                            <div class="team-single-arrow team-button-next ml-25" tabindex="0" role="button"
+                                 aria-label="Next slide" aria-controls="swiper-wrapper-39e3d3d6831a1f7c"><span><svg
+                                    width="35" height="28" viewBox="0 0 35 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_326_645)"><path
+                                    d="M0 13.9954H35" stroke="currentColor" stroke-width="2"
+                                    stroke-miterlimit="10"></path><path
+                                    d="M21.4453 0C21.4453 7.73574 27.5079 13.9953 35.0001 13.9953" stroke="currentColor"
+                                    stroke-width="2" stroke-miterlimit="10"></path><path
+                                    d="M35.0001 13.9954C27.5079 13.9954 21.4453 20.255 21.4453 27.9907"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path></g><defs><clipPath
+                                    id="clip0_326_645"><rect width="35" height="28"
+                                                             fill="white"></rect></clipPath></defs></svg></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container team-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-rtl">
+                    <div class="swiper-wrapper" id="swiper-wrapper-39e3d3d6831a1f7c" aria-live="polite"
+                         style="transform: translate3d(720px, 0px, 0px); transition-duration: 0ms;">
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" role="group"
+                             aria-label="5 / 9" style="width: 330px; margin-left: 30px;" data-swiper-slide-index="1">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-2.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        فرزانه لئو</a></h4><span class="team-author-position">جراح پوست</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" role="group"
+                             aria-label="6 / 9" style="width: 330px; margin-left: 30px;" data-swiper-slide-index="2">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-3.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        عیسی</a></h4><span class="team-author-position">جراحی مغز</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 9"
+                             style="width: 330px; margin-left: 30px;" data-swiper-slide-index="0">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-1.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        مایکل جان</a></h4><span class="team-author-position">جراحی مغز</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="5 / 9"
+                             style="width: 330px; margin-left: 30px;" data-swiper-slide-index="1">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-2.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        فرزانه لئو</a></h4><span class="team-author-position">جراح پوست</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate-prev" role="group" aria-label="6 / 9"
+                             style="width: 330px; margin-left: 30px;" data-swiper-slide-index="2">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-3.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        عیسی</a></h4><span class="team-author-position">جراحی مغز</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" role="group"
+                             aria-label="4 / 9" style="width: 330px; margin-left: 30px;" data-swiper-slide-index="0">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-1.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        مایکل جان</a></h4><span class="team-author-position">جراحی مغز</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" role="group"
+                             aria-label="5 / 9" style="width: 330px; margin-left: 30px;" data-swiper-slide-index="1">
+                            <div class="team-item tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <div class="team-profile"><img src="assets/img/team/team-2.jpg" alt=""></div>
+                                <div class="team-content text-center">
+                                    <div class="team-author-social pt-50 pb-20"><a href="#"><i
+                                            class="fa-solid fa-paper-plane"></i></a><a href="#"><i
+                                            class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a></div>
+                                    <h4 class="team-author-title under-line-white"><a href="team-details.html">دکتر.
+                                        فرزانه لئو</a></h4><span class="team-author-position">جراح پوست</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+        </section>
+        <section class="appoinment-form-area theme-bg-2 p-relative mb-140 pt-150 pb-140">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-5 col-xl-6 col-lg-5">
+                        <div class="tpsection mb-30">
+                            <div class="tpsection-sub-title"><span>قرار ملاقات بگیرید</span></div>
+                            <h2 class="tpsection-title">مشخصات خود را به<br>خودت رزرو کن</h2></div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-6 col-lg-7">
+                        <div class="form-wrap wow fadeInRight" data-wow-duration="1.8s" data-wow-delay=".7s"
+                             style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.7s; animation-name: fadeInRight;">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="appoinment-form-input mb-30"><input type="text"
+                                                                                        placeholder="اسم شما"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="appoinment-form-input mb-30"><input type="text" placeholder="تلفن">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="appoinment-form-input mb-30"><input type="email"
+                                                                                        placeholder="آدرس ایمیل"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="appoinment-form-input mb-30"><select class="doctor-name wide"
+                                                                                         style="display: none;">
+                                            <option>دسته بندی</option>
+                                            <option value="Cleaning Service">جراحی مغز</option>
+                                            <option value="Iron Service">جراحی پلاستیک</option>
+                                            <option value="Carpet Service">تغییر شکل گوش</option>
+                                        </select>
+                                            <div class="nice-select doctor-name wide" tabindex="0"><span
+                                                    class="current">دسته بندی</span>
+                                                <ul class="list">
+                                                    <li data-value="دسته بندی" class="option selected">دسته بندی</li>
+                                                    <li data-value="Cleaning Service" class="option">جراحی مغز</li>
+                                                    <li data-value="Iron Service" class="option">جراحی پلاستیک</li>
+                                                    <li data-value="Carpet Service" class="option">تغییر شکل گوش</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="appoinment-form-input mb-30"><select class="doctor-name wide"
+                                                                                         style="display: none;">
+                                            <option>دکتر را انتخاب کنید</option>
+                                            <option value="Cleaning Service">دکتر. جونگ</option>
+                                            <option value="Iron Service">دکتر. فونگ سوک</option>
+                                            <option value="Carpet Service">دکتر. واگدو</option>
+                                        </select>
+                                            <div class="nice-select doctor-name wide" tabindex="0"><span
+                                                    class="current">دکتر را انتخاب کنید</span>
+                                                <ul class="list">
+                                                    <li data-value="دکتر را انتخاب کنید" class="option selected">دکتر را
+                                                        انتخاب کنید
+                                                    </li>
+                                                    <li data-value="Cleaning Service" class="option">دکتر. جونگ</li>
+                                                    <li data-value="Iron Service" class="option">دکتر. فونگ سوک</li>
+                                                    <li data-value="Carpet Service" class="option">دکتر. واگدو</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="appoinment-form-input mb-30"><input type="text" placeholder="تاریخ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="appoinment-form-submit mb-30">
+                                            <button class="tp-btn">قرار ملاقات بگیرید</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appoinment-shape">
+                <div class="appoinment-shape-1"><img src="assets/img/shape/form-shape-1.png" alt=""></div>
+                <div class="appoinment-shape-2"><img src="assets/img/shape/form-shape-2.png" alt=""></div>
+            </div>
+        </section>
+        <section class="testimonial-area mb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="testimonial-wrap p-relative mt-20 mb-60">
+                            <div class="testimonial-main-bg"><img src="assets/img/testimonial/testimonial-1-bg-1.png"
+                                                                  alt=""></div>
+                            <div class="testimonial-shape">
+                                <div class="testimonial-shape-1 wow fadeInRight" data-wow-duration="1s"
+                                     data-wow-delay=".3s"
+                                     style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                                    <img src="assets/img/testimonial/testimonial-1-bg-2.png" alt=""></div>
+                            </div>
+                            <div class="happy-client">
+                                <h2 class="count"><span class="odometer odometer-auto-theme" data-count="26"><div
+                                        class="odometer-inside"><span class="odometer-digit"><span
+                                        class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
+                                        class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
+                                        class="odometer-value">2</span></span></span></span></span><span
+                                        class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                        class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                        class="odometer-ribbon-inner"><span
+                                        class="odometer-value">6</span></span></span></span></span></div></span>ک
+                                </h2>
+                                <p>خوشحال<br>مشتریان</p></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="testimonial-wrapper mb-60">
+                            <div class="tpsection mb-25">
+                                <div class="tpsection-sub-title mb-15"><span>گواهینامه</span></div>
+                                <h2 class="tpsection-title">آنچه مشتریان ما در مورد ما می گویند</h2></div>
+                            <div class="testimonial-box p-relative">
+                                <div class="testimonial-1-thumb">
+                                    <div class="swiper-container swiper test-ava-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-free-mode swiper-container-rtl swiper-container-thumbs">
+                                        <div class="swiper-wrapper testi-avta-bottom pt-20 pb-30"
+                                             id="swiper-wrapper-1510473134e0c06910" aria-live="polite"
+                                             style="transform: translate3d(306.667px, 0px, 0px); transition-duration: 0ms;">
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-thumb-active"
+                                                 data-swiper-slide-index="0" role="group" aria-label="1 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                                 data-swiper-slide-index="1" role="group" aria-label="2 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                                 data-swiper-slide-index="2" role="group" aria-label="3 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-active swiper-slide-thumb-active"
+                                                 data-swiper-slide-index="0" role="group" aria-label="4 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1"
+                                                 role="group" aria-label="5 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-prev"
+                                                 data-swiper-slide-index="2" role="group" aria-label="6 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-thumb-active"
+                                                 data-swiper-slide-index="0" role="group" aria-label="7 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                                 data-swiper-slide-index="1" role="group" aria-label="8 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                                                 role="group" aria-label="9 / 9"
+                                                 style="width: 123.333px; margin-left: 30px;">
+                                                <div class="testimonial-author-thumb"><img
+                                                        src="assets/img/testimonial/testimonial-author-3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="swiper-notification" aria-live="assertive"
+                                              aria-atomic="true"></span></div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="swiper-container swiper test-active swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-rtl">
+                                        <div class="swiper-wrapper" id="swiper-wrapper-be246019ab0cb42c"
+                                             aria-live="polite"
+                                             style="transition-duration: 0ms; transform: translate3d(700px, 0px, 0px);">
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                                 data-swiper-slide-index="2" role="group" aria-label="1 / 5"
+                                                 style="width: 690px; margin-left: 10px;">
+                                                <div class="testimonial-content"><p>“Fringilla utade morbi tincidunt
+                                                    augu interdum velit euismo. Nullam consequat volutpat donec urna
+                                                    lorem pellentesque.Fringilla amusb morbi tincidunt augue interdum
+                                                    velit euismo.”</p>
+                                                    <div class="testimonial-author"><span
+                                                            class="testimonial-author-name">دکوستای مخوف</span><span
+                                                            class="testimonial-author-position">موسس</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                                 role="group" aria-label="2 / 5"
+                                                 style="width: 690px; margin-left: 10px;">
+                                                <div class="testimonial-content"><p>“Fringilla utade morbi tincidunt
+                                                    augu interdum velit euismo. Nullam consequat volutpat donec urna
+                                                    lorem pellentesque.Fringilla amusb morbi tincidunt.”</p>
+                                                    <div class="testimonial-author"><span
+                                                            class="testimonial-author-name">دکوستای مخوف</span><span
+                                                            class="testimonial-author-position">CTO</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1"
+                                                 role="group" aria-label="3 / 5"
+                                                 style="width: 690px; margin-left: 10px;">
+                                                <div class="testimonial-content"><p>“Fringilla utade morbi tincidunt
+                                                    augu interdum velit euismo. Nullam consequat volutpat donec urna
+                                                    lorem pellentesque.Fringilla amusb morbi tincidunt augue interdum
+                                                    velit euismo.”</p>
+                                                    <div class="testimonial-author"><span
+                                                            class="testimonial-author-name">دکوستای مخوف</span><span
+                                                            class="testimonial-author-position">مدیر عامل و موسس</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-prev"
+                                                 data-swiper-slide-index="2" role="group" aria-label="4 / 5"
+                                                 style="width: 690px; margin-left: 10px;">
+                                                <div class="testimonial-content"><p>“Fringilla utade morbi tincidunt
+                                                    augu interdum velit euismo. Nullam consequat volutpat donec urna
+                                                    lorem pellentesque.Fringilla amusb morbi tincidunt augue interdum
+                                                    velit euismo.”</p>
+                                                    <div class="testimonial-author"><span
+                                                            class="testimonial-author-name">دکوستای مخوف</span><span
+                                                            class="testimonial-author-position">موسس</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                                 data-swiper-slide-index="0" role="group" aria-label="5 / 5"
+                                                 style="width: 690px; margin-left: 10px;">
+                                                <div class="testimonial-content"><p>“Fringilla utade morbi tincidunt
+                                                    augu interdum velit euismo. Nullam consequat volutpat donec urna
+                                                    lorem pellentesque.Fringilla amusb morbi tincidunt.”</p>
+                                                    <div class="testimonial-author"><span
+                                                            class="testimonial-author-name">دکوستای مخوف</span><span
+                                                            class="testimonial-author-position">CTO</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="swiper-notification" aria-live="assertive"
+                                              aria-atomic="true"></span></div>
+                                </div>
+                                <div class="testimonial-arrows d-flex align-items-center justify-content-end">
+                                    <div class="testimonial-single-arrow testimonial-button-prev" tabindex="0"
+                                         role="button" aria-label="Previous slide"
+                                         aria-controls="swiper-wrapper-be246019ab0cb42c"><span><svg width="35"
+                                                                                                    height="28"
+                                                                                                    viewBox="0 0 35 28"
+                                                                                                    fill="none"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"><g
+                                            clip-path="url(#clip0_326_651)"><path d="M35 13.9954H3.29442e-07"
+                                                                                  stroke="currentColor" stroke-width="2"
+                                                                                  stroke-miterlimit="10"></path><path
+                                            d="M13.5547 0C13.5547 7.73574 7.49212 13.9953 -0.000121431 13.9953"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path><path
+                                            d="M-0.000121431 13.9954C7.49212 13.9954 13.5547 20.255 13.5547 27.9907"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path></g><defs><clipPath
+                                            id="clip0_326_6512"><rect width="35" height="28" fill="white"
+                                                                      transform="matrix(-1 0 0 1 35 0)"></rect></clipPath></defs></svg></span>
+                                    </div>
+                                    <div class="testimonial-single-arrow testimonial-button-next ml-25" tabindex="0"
+                                         role="button" aria-label="Next slide"
+                                         aria-controls="swiper-wrapper-be246019ab0cb42c"><span><svg width="35"
+                                                                                                    height="28"
+                                                                                                    viewBox="0 0 35 28"
+                                                                                                    fill="none"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"><g
+                                            clip-path="url(#clip0_326_645)"><path d="M0 13.9954H35"
+                                                                                  stroke="currentColor" stroke-width="2"
+                                                                                  stroke-miterlimit="10"></path><path
+                                            d="M21.4453 0C21.4453 7.73574 27.5079 13.9953 35.0001 13.9953"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path><path
+                                            d="M35.0001 13.9954C27.5079 13.9954 21.4453 20.255 21.4453 27.9907"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path></g><defs><clipPath
+                                            id="clip0_326_6455"><rect width="35" height="28"
+                                                                      fill="white"></rect></clipPath></defs></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-area mb-120">
+            <div class="container">
+                <div class="cta-bg" data-background="assets/img/banner/cta-bg.jpg"
+                     style="background-image: url(&quot;assets/img/banner/cta-bg.jpg&quot;);">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9 col-md-9">
+                            <div class="tpsection">
+                                <div class="tpsection-sub-title"><span>قرار ملاقات بگیرید</span></div>
+                                <h2 class="tpsection-title">مشاوره با<br>دکتر ما</h2></div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="cta-phone text-center pl-10"><a class="tp-ripple" href="tel:0123456789"><i
+                                    class="fa-light fa-phone-volume"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-area mb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tpsection text-center mb-80">
+                            <div class="blog-sub-title tpsection-sub-title mb-10">قرار ملاقات بگیرید</div>
+                            <h2 class="tpsection-title">جدیدترین از وبلاگ ها</h2></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"
+                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                            <div class="blog-content"><span class="blog-title under-line-theme"><a
+                                    href="blog-details.html">تمرین هنر جراحی پلاستیک برای پوست</a></span></div>
+                            <div class="blog-thumb tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-sm-1.jpg" alt=""></a></div>
+                            <div class="blog-btn"><a href="blog-details.html">ادامه مطلب<span><svg width="20"
+                                                                                                   height="20"
+                                                                                                   viewBox="0 0 20 20"
+                                                                                                   fill="none"
+                                                                                                   xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M4.16602 10H15.8327" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path><path
+                                    d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s"
+                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <div class="blog-content"><span class="blog-title under-line-theme"><a
+                                    href="blog-details.html">جراح عمومی می گوید که مشکلی برای رقابت است</a></span></div>
+                            <div class="blog-thumb tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-sm-2.jpg" alt=""></a></div>
+                            <div class="blog-btn"><a href="blog-details.html">ادامه مطلب<span><svg width="20"
+                                                                                                   height="20"
+                                                                                                   viewBox="0 0 20 20"
+                                                                                                   fill="none"
+                                                                                                   xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M4.16602 10H15.8327" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path><path
+                                    d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s"
+                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.9s; animation-name: fadeInUp;">
+                            <div class="blog-content"><span class="blog-title under-line-theme"><a
+                                    href="blog-details.html">تعمیرات عمومی با کیفیت بالا و قیمت عالی</a></span></div>
+                            <div class="blog-thumb tp-thumb-common fix">
+                                <div class="tp-thumb-common-overlay wow"
+                                     style="visibility: visible; animation-name: tpoverlay;"></div>
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-sm-3.jpg" alt=""></a></div>
+                            <div class="blog-btn"><a href="blog-details.html">ادامه مطلب<span><svg width="20"
+                                                                                                   height="20"
+                                                                                                   viewBox="0 0 20 20"
+                                                                                                   fill="none"
+                                                                                                   xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M4.16602 10H15.8327" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path><path
+                                    d="M10 4.16699L15.8333 10.0003L10 15.8337" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
