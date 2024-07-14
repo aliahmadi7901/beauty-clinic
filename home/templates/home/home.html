@@ -1,4 +1,5 @@
 {% extends 'shared/base.html' %}
+{% load static %}
 
 {% block title %}
     کیلینیک زیبایی
@@ -24,10 +25,11 @@
                     <div class="col-lg-6">
                         <div class="tpbanner-shape p-relative">
                             <div class="tpbanner-shape-1 d-lg-none d-xl-block"><img
-                                    src="assets/img/banner/banner-1-img-1.png" alt=""></div>
+                                    src="{% static 'assets/img/banner/banner-1-img-1.png' %}" alt=""></div>
                             <div class="tpbanner-shape-2 d-none d-lg-block"><img
-                                    src="assets/img/banner/banner-1shape-1.svg" alt=""></div>
-                            <div class="tpbanner-shape-3"><img src="assets/img/banner/banner-1shape-2.svg" alt=""></div>
+                                    src="{% static 'assets/img/banner/banner-1shape-1.svg' %}" alt=""></div>
+                            <div class="tpbanner-shape-3"><img
+                                    src="{% static 'assets/img/banner/banner-1shape-2.svg' %}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -35,7 +37,8 @@
             <div class="tpbanner-video wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"
                  style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
                 <div class="tpbanner-video-info"><a class="tp-btn" href="appointment.html">قرار ملاقات بگیرید</a></div>
-                <div class="tpbanner-video-thumb p-relative"><img src="assets/img/banner/video-1-bg-1.jpg" alt="">
+                <div class="tpbanner-video-thumb p-relative"><img
+                        src="{% static 'assets/img/banner/video-1-bg-1.jpg' %}" alt="">
                     <div class="tpbanner-video-play"><a class="popup-video"
                                                         href="https://www.youtube.com/watch?v=TYYf8zYjP5k"><i>
                         <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,13 +58,13 @@
                         </div>
                         <div class="about-thumb mt-70 wow fadeInUp mb-30" data-wow-duration="1s" data-wow-delay=".6s"
                              style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
-                            <img src="assets/img/about/about-thumb-1.png" alt=""></div>
+                            <img src="{% static 'assets/img/about/about-thumb-1.png' %}" alt=""></div>
                     </div>
                     <div class="col-lg-8">
                         <div class="about-wrapper">
                             <div class="tpsection about-left mb-45"><h2 class="tpsection-title">مراقبت
                                 استثنایی<span><img class="d-none d-md-block wow fadeInRight"
-                                                   src="assets/img/about/about-1-shape-1.png" alt=""
+                                                   src="{% static 'assets/img/about/about-1-shape-1.png' %}" alt=""
                                                    data-wow-duration="1s" data-wow-delay=".6s"
                                                    style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInRight;"></span>تکنولوژی
                                 استثنایی</h2></div>
@@ -71,16 +74,18 @@
                                         <div class="about-box-content p-relative mb-30"><p>پیشرفت پزشکی که ذهن شما را به
                                             جامعه قوی‌تر می‌کند مهم‌ترین شماست.</p><h5 class="about-box-title">ماموریت
                                             ما</h5>
-                                            <div class="about-box-shape"><img src="assets/img/about/about-1-shape-2.png"
-                                                                              alt=""></div>
+                                            <div class="about-box-shape"><img
+                                                    src="{% static 'assets/img/about/about-1-shape-2.png' %}"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="about-box-content about-box-2 p-relative mb-30"><p>پیشرفت پزشکی که
                                             ذهن شما را به جامعه قوی‌تر می‌کند مهم‌ترین شماست.</p><h5
                                                 class="about-box-title">دیدگاه ما</h5>
-                                            <div class="about-box-shape"><img src="assets/img/about/about-1-shape-2.png"
-                                                                              alt=""></div>
+                                            <div class="about-box-shape"><img
+                                                    src="{% static 'assets/img/about/about-1-shape-2.png' %}"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -100,45 +105,53 @@
                                 <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                                      role="group" aria-label="7 / 12" style="width: 330px; margin-left: 30px;"
                                      data-swiper-slide-index="2">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-3.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-3.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
                                      role="group" aria-label="8 / 12" style="width: 330px; margin-left: 30px;"
                                      data-swiper-slide-index="3">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-4.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-4.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide" role="group" aria-label="5 / 12"
                                      style="width: 330px; margin-left: 30px;" data-swiper-slide-index="0">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-1.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-1.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide swiper-slide-prev" role="group" aria-label="6 / 12"
                                      style="width: 330px; margin-left: 30px;" data-swiper-slide-index="1">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-2.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-2.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide swiper-slide-active" role="group" aria-label="7 / 12"
                                      style="width: 330px; margin-left: 30px;" data-swiper-slide-index="2">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-3.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-3.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide swiper-slide-next" role="group" aria-label="8 / 12"
                                      style="width: 330px; margin-left: 30px;" data-swiper-slide-index="3">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-4.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-4.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="5 / 12"
                                      style="width: 330px; margin-left: 30px;" data-swiper-slide-index="0">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-1.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-1.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                                 <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
                                      role="group" aria-label="6 / 12" style="width: 330px; margin-left: 30px;"
                                      data-swiper-slide-index="1">
-                                    <div class="brand-item"><a href="#"><img src="assets/img/brand/sponsor-2.svg"
-                                                                             alt=""></a></div>
+                                    <div class="brand-item"><a href="#"><img
+                                            src="{% static 'assets/img/brand/sponsor-2.svg' %}"
+                                            alt=""></a></div>
                                 </div>
                             </div>
                             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
@@ -153,11 +166,11 @@
                         <div class="beforeAfter" data-bareservedstyle="position:static;overflow:visible"
                              style="position: relative; overflow: hidden;">
                             <div style="position:relative !important;width:100% !important;height:100%  !important;-webkit-user-select:none;-ms-user-select:none;user-select:none;">
-                                <img src="assets/img/before-after/before-after-1.jpg" alt=""
+                                <img src="{% static 'assets/img/before-after/before-after-1.jpg' %}" alt=""
                                      data-bareservedstyle="position:static;top:auto;left:auto;width:1290px;height:570px;z-index:auto;float:none"
                                      style="position: relative; top: 0px; left: 0px; width: 100%;"></div>
                             <div style="position:absolute !important;width:50% !important;height:100% !important;top:0px !important;right:0px !important;overflow:hidden !important;-webkit-user-select:none;-ms-user-select:none;user-select:none;">
-                                <img src="assets/img/before-after/before-after-2.jpg" alt=""
+                                <img src="{% static 'assets/img/before-after/before-after-2.jpg' %}" alt=""
                                      data-bareservedstyle="position:static;top:auto;left:auto;width:1290px;height:570px;z-index:auto"
                                      style="position: absolute; top: 0px; right: 0px; width: 690px; height: 570px; z-index: 1;">
                             </div>
@@ -220,7 +233,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-2.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-2.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -235,7 +249,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-3.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-3.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -250,7 +265,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-1.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-1.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -265,7 +281,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-2.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-2.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -280,7 +297,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-3.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-3.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -295,7 +313,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-1.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-1.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -310,7 +329,8 @@
                             <div class="team-item tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <div class="team-profile"><img src="assets/img/team/team-2.jpg" alt=""></div>
+                                <div class="team-profile"><img src="{% static 'assets/img/team/team-2.jpg' %}" alt="">
+                                </div>
                                 <div class="team-content text-center">
                                     <div class="team-author-social pt-50 pb-20"><a href="#"><i
                                             class="fa-solid fa-paper-plane"></i></a><a href="#"><i
@@ -405,8 +425,10 @@
                 </div>
             </div>
             <div class="appoinment-shape">
-                <div class="appoinment-shape-1"><img src="assets/img/shape/form-shape-1.png" alt=""></div>
-                <div class="appoinment-shape-2"><img src="assets/img/shape/form-shape-2.png" alt=""></div>
+                <div class="appoinment-shape-1"><img src="{% static 'assets/img/shape/form-shape-1.png' %}" alt="">
+                </div>
+                <div class="appoinment-shape-2"><img src="{% static 'assets/img/shape/form-shape-2.png' %}" alt="">
+                </div>
             </div>
         </section>
         <section class="testimonial-area mb-60">
@@ -414,13 +436,15 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-6">
                         <div class="testimonial-wrap p-relative mt-20 mb-60">
-                            <div class="testimonial-main-bg"><img src="assets/img/testimonial/testimonial-1-bg-1.png"
-                                                                  alt=""></div>
+                            <div class="testimonial-main-bg"><img
+                                    src="{% static 'assets/img/testimonial/testimonial-1-bg-1.png' %}"
+                                    alt=""></div>
                             <div class="testimonial-shape">
                                 <div class="testimonial-shape-1 wow fadeInRight" data-wow-duration="1s"
                                      data-wow-delay=".3s"
                                      style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
-                                    <img src="assets/img/testimonial/testimonial-1-bg-2.png" alt=""></div>
+                                    <img src="{% static 'assets/img/testimonial/testimonial-1-bg-2.png' %}" alt="">
+                                </div>
                             </div>
                             <div class="happy-client">
                                 <h2 class="count"><span class="odometer odometer-auto-theme" data-count="26"><div
@@ -451,63 +475,72 @@
                                                  data-swiper-slide-index="0" role="group" aria-label="1 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-1.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-1.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
                                                  data-swiper-slide-index="1" role="group" aria-label="2 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-2.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-2.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
                                                  data-swiper-slide-index="2" role="group" aria-label="3 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-3.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-3.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-active swiper-slide-thumb-active"
                                                  data-swiper-slide-index="0" role="group" aria-label="4 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-1.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-1.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1"
                                                  role="group" aria-label="5 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-2.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-2.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-duplicate-prev"
                                                  data-swiper-slide-index="2" role="group" aria-label="6 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-3.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-3.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-thumb-active"
                                                  data-swiper-slide-index="0" role="group" aria-label="7 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-1.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-1.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
                                                  data-swiper-slide-index="1" role="group" aria-label="8 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-2.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-2.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
                                                  role="group" aria-label="9 / 9"
                                                  style="width: 123.333px; margin-left: 30px;">
                                                 <div class="testimonial-author-thumb"><img
-                                                        src="assets/img/testimonial/testimonial-author-3.png" alt="">
+                                                        src="{% static 'assets/img/testimonial/testimonial-author-3.png' %}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -626,8 +659,8 @@
         </section>
         <section class="cta-area mb-120">
             <div class="container">
-                <div class="cta-bg" data-background="assets/img/banner/cta-bg.jpg"
-                     style="background-image: url(&quot;assets/img/banner/cta-bg.jpg&quot;);">
+                <div class="cta-bg" data-background="{% static 'assets/img/banner/cta-bg.jpg' %}"
+                     style="background-image: url(&quot;{% static 'assets/img/banner/cta-bg.jpg&quot;' %});">
                     <div class="row align-items-center">
                         <div class="col-lg-9 col-md-9">
                             <div class="tpsection">
@@ -660,7 +693,8 @@
                             <div class="blog-thumb tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-sm-1.jpg" alt=""></a></div>
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-sm-1.jpg' %}"
+                                                                 alt=""></a></div>
                             <div class="blog-btn"><a href="blog-details.html">ادامه مطلب<span><svg width="20"
                                                                                                    height="20"
                                                                                                    viewBox="0 0 20 20"
@@ -680,7 +714,8 @@
                             <div class="blog-thumb tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-sm-2.jpg" alt=""></a></div>
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-sm-2.jpg' %}"
+                                                                 alt=""></a></div>
                             <div class="blog-btn"><a href="blog-details.html">ادامه مطلب<span><svg width="20"
                                                                                                    height="20"
                                                                                                    viewBox="0 0 20 20"
@@ -700,7 +735,8 @@
                             <div class="blog-thumb tp-thumb-common fix">
                                 <div class="tp-thumb-common-overlay wow"
                                      style="visibility: visible; animation-name: tpoverlay;"></div>
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-sm-3.jpg" alt=""></a></div>
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog-sm-3.jpg' %}"
+                                                                 alt=""></a></div>
                             <div class="blog-btn"><a href="blog-details.html">ادامه مطلب<span><svg width="20"
                                                                                                    height="20"
                                                                                                    viewBox="0 0 20 20"
