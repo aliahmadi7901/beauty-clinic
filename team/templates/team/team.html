@@ -1,0 +1,72 @@
+{% extends 'shared/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    تیم ما
+{% endblock %}
+
+{% block content %}
+    <section class="breadcrumb-area tpbreadcrumb-overlay"
+             data-background="{% static 'assets/img/breadcrumb/breadcrumb-bg-1.jpg' %}"
+    >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="tpbreadcrumb text-center">
+                        <h2 class="tpbreadcrumb-title">پزشکان</h2>
+                        <p>تیم ما متشکل از پزشکان متخصص و درجه یک در ایران و حتی خاور میانه است.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-area pt-145 pb-85">
+        <div class="container">
+            <div class="row">
+                {% for doctor in doctors %}
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="team-3 p-relative text-center mb-55">
+                            <div class="team-3-thumb mb-20">
+                                <div class="team-3-thumb-main p-relative fix">
+                                    <a href="{% url 'doctor_page' doctor.id %}"><img src="{{ doctor.image.url }}" alt="doctor"></a>
+                                    <div class="team-3-shape"><i>
+                                        <svg width="362" height="189" viewBox="0 0 362 189" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0V7.92377C0 107.931 81.04 189 181 189C280.96 189 362 107.921 362 7.91377V0L328.785 10.2766C232.513 40.0623 129.487 40.0624 33.2155 10.2766L0 0Z"
+                                                  fill="currentColor"></path>
+                                        </svg>
+                                    </i></div>
+                                </div>
+                                <div class="team-3-social">
+                                    <b><a href="tel:{{ doctor.office_phone }}">تلفن
+                                        مطب: {{ doctor.office_phone }}</a></b>
+                                </div>
+                            </div>
+                            <div class="team-3-content">
+                                <h4 class="team-3-title"><a href="{% url 'doctor_page' doctor.id %}">{{ doctor.name }}</a></h4>
+                                <span>{{ doctor.skill }}</span>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="pagination basic-pagination">
+                <ul>
+                    {% if page_obj.has_previous %}
+                        <li><a href="?page={{ page_obj.previous_page_number }}">قبلی</a>
+                        </li>
+                    {% endif %}
+                    {% for page_number in paginator.page_range %}
+                        <li class="{% if page_obj.number == page_number %}active{% endif %}">
+                            <a href="?page={{ page_number }}">{{ page_number }}</a>
+                        </li>
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                        <li><a href="?page={{ page_obj.next_page_number }}">بعدی</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endblock %}

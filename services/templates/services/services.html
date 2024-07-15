@@ -17,40 +17,41 @@
             </div>
             <div class="row">
                 {% for service in services %}
-                	<div class="col-lg-4 col-md-6">
-                    <div class="services-3 p-relative theme-bg-6 text-center mb-30">
-                        <div class="services-3-thumb p-relative">
-                            <div class="services-3-mask"><img
-                                    src="{{ service.image.url }}" alt="service" id="services_image"></div>
-                            <div class="services-3-shape"><span><svg width="410" height="257" viewBox="0 0 410 257"
-                                                                     fill="none" xmlns="http://www.w3.org/2000/svg"><path
-                                    d="M0 0V187C60.1985 228.028 128.519 257 205 257C281.481 257 349.814 228.028 410 187V0H0Z"
-                                    fill="currentColor"></path></svg></span></div>
-                        </div>
-                        <div class="services-3-content">
-                            <h4 class="services-3-title"><a href="{% url 'service_detail' service.id %}">{{ service.title }}</a></h4>
-                            <p>{{ service.short_description }}</p>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-3 p-relative theme-bg-6 text-center mb-30">
+                            <div class="services-3-thumb p-relative">
+                                <div class="services-3-mask"><img
+                                        src="{{ service.image.url }}" alt="service" id="services_image"></div>
+                                <div class="services-3-shape"><span><svg width="410" height="257" viewBox="0 0 410 257"
+                                                                         fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M0 0V187C60.1985 228.028 128.519 257 205 257C281.481 257 349.814 228.028 410 187V0H0Z"
+                                        fill="currentColor"></path></svg></span></div>
+                            </div>
+                            <div class="services-3-content">
+                                <h4 class="services-3-title"><a
+                                        href="{% url 'service_detail' service.id %}">{{ service.title }}</a></h4>
+                                <p>{{ service.short_description }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 {% endfor %}
             </div>
             <div class="pagination basic-pagination">
-                    <ul>
-                        {% if page_obj.has_previous %}
-                            <li><a href="?page={{ page_obj.previous_page_number }}">قبلی</a>
-                            </li>
-                        {% endif %}
-                        {% for page_number in paginator.page_range %}
-                            <li class="{% if page_obj.number == page_number %}active{% endif %}">
-                                <a href="?page={{ page_number }}">{{ page_number }}</a>
-                            </li>
-                        {% endfor %}
-                        {% if page_obj.has_next %}
-                            <li><a href="?page={{ page_obj.next_page_number }}">بعدی</a></li>
-                        {% endif %}
-                    </ul>
-                </div>
+                <ul>
+                    {% if page_obj.has_previous %}
+                        <li><a href="?page={{ page_obj.previous_page_number }}">قبلی</a>
+                        </li>
+                    {% endif %}
+                    {% for page_number in paginator.page_range %}
+                        <li class="{% if page_obj.number == page_number %}active{% endif %}">
+                            <a href="?page={{ page_number }}">{{ page_number }}</a>
+                        </li>
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                        <li><a href="?page={{ page_obj.next_page_number }}">بعدی</a></li>
+                    {% endif %}
+                </ul>
+            </div>
         </div>
     </section>
 {% endblock %}
