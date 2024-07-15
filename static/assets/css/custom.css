@@ -1,0 +1,8 @@
+#services_image {
+    height: 350px;
+}
+
+#description {
+    text-overflow: initial;
+    direction: rtl;
+}

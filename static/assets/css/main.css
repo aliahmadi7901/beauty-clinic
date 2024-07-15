@@ -111,6 +111,7 @@
 .main-menu ul li .tp-submenu, .tp-accordion .accordion-button .tp-accordion-plus, .tp-accordion .accordion-button .tp-accordion-plus::after, .tp-accordion .accordion-button .tp-accordion-plus::before, .back-to-top-wrapper, a,
 button,
 p,
+pre,
 input,
 select,
 textarea,
@@ -243,7 +244,7 @@ ul {
   padding: 0px;
 }
 
-p {
+p, pre {
   font-family: var(--tp-ff-p);
   font-size: 20px;
   font-weight: 400;

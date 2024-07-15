@@ -1,0 +1,114 @@
+{% extends 'shared/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    جزئیات خدمات
+{% endblock %}
+
+{% block content %}
+    <section class="breadcrumb-area tpbreadcrumb-overlay" data-background="{{ service.image.url }}"
+             style="background-image: url({{ service.image.url }});">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="tpbreadcrumb text-center">
+                        <h2 class="tpbreadcrumb-title">جزئیات خدمات</h2>
+                        <p>ارائه خدمات زیبایی با بالاترین کیفیت و رضایت مشتریان در کیلینیک زیبایی ما.بهترین تبلیغ ما
+                            مراجعین خوشحال ما هستند.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-details pt-145 pb-95">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services-details-left mr-10">
+                        <div class="services-details-others mb-40">
+                            <span>سایر خدمات</span>
+                            <ul class="list">
+                                {% for serv in services %}
+                                    <li><a href="{% url 'service_detail' serv.id %}">{{ serv.title }}<span><svg width="14" height="14"
+                                                                               viewBox="0 0 14 14"
+                                                                               fill="none"
+                                                                               xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M10.4766 6.16689L6.00658 1.69689L7.18492 0.518555L13.6666 7.00022L7.18492 13.4819L6.00658 12.3036L10.4766 7.83355H0.333252V6.16689H10.4766Z"
+                                            fill="currentColor"></path></svg></span></a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="services-details-cta mb-40">
+                            <div class="services-details-cta-thumb"><img
+                                    src="{% static 'assets/img/services/service-details/service-details-1.jpg' %}" alt="image"></div>
+                            <div class="services-details-cta-content">
+                                <h4 class="services-details-cta-title">نیاز به تماس اضطراری دارید؟</h4>
+                                <a class="tp-btn" href="appointment.html">مشاوره دریافت کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="services-details-right">
+                        <div class="services-details-item mb-55">
+                            <div class="services-details-thumb mb-30"><img
+                                    src="{{ service.image.url }}" alt="service"></div>
+                            <h4 class="services-details-item-title">{{ service.title }}</h4>
+                            <pre id="description">{{ service.description }}</pre>
+                        </div>
+                        <div class="services-details-feature mb-25">
+                            <ul>
+                                <li>
+                                    <div class="services-details-feature-item">
+                                        <div class="services-details-feature-icon"><span><svg width="28" height="34"
+                                                                                              viewBox="0 0 28 34"
+                                                                                              fill="none"
+                                                                                              xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M14 21.9997C20.8 21.9997 26.41 27.0897 27.23 33.6663H0.77002C1.59002 27.0897 7.20002 21.9997 14 21.9997ZM10.9784 25.7997C8.58835 26.5563 6.57669 28.188 5.33335 30.333H14L10.9784 25.7997ZM17.0234 25.7997L14 30.333H22.665C21.4234 28.188 19.4117 26.5563 17.0234 25.7997V25.7997ZM24 0.333008V10.333C24 15.8563 19.5234 20.333 14 20.333C8.47669 20.333 4.00002 15.8563 4.00002 10.333V0.333008H24ZM7.33335 10.333C7.33335 14.0163 10.3167 16.9997 14 16.9997C17.6834 16.9997 20.6667 14.0163 20.6667 10.333H7.33335ZM20.6667 3.66634H7.33335V6.99967H20.6667V3.66634Z"
+                                                fill="#CD5F37"></path></svg></span></div>
+                                        <div class="services-details-feature-content">
+                                            <h4 class="services-details-feature-title">جراحان متخصص</h4>
+                                            <p>هر کدام از جراحان ما دارای تخصص و تجربه بالا هستند.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="services-details-feature-item">
+                                        <div class="services-details-feature-icon"><span><svg width="31" height="32"
+                                                                                              viewBox="0 0 31 32"
+                                                                                              fill="none"
+                                                                                              xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M7.33342 0V3.33333H4.00008V10C4.00008 13.6833 6.98341 16.6667 10.6667 16.6667C14.3501 16.6667 17.3334 13.6833 17.3334 10V3.33333H14.0001V0H19.0001C19.9201 0 20.6667 0.746667 20.6667 1.66667V10C20.6667 14.955 17.0634 19.0667 12.3334 19.8617V22.5C12.3334 25.7217 14.9451 28.3333 18.1667 28.3333C20.6617 28.3333 22.7917 26.7667 23.6251 24.5617C21.8801 23.7833 20.6667 22.0333 20.6667 20C20.6667 17.2383 22.9051 15 25.6667 15C28.4284 15 30.6667 17.2383 30.6667 20C30.6667 22.285 29.1334 24.2117 27.0401 24.8083C26.0167 28.7533 22.4317 31.6667 18.1667 31.6667C13.1034 31.6667 9.00008 27.5633 9.00008 22.5V19.8617C4.27008 19.0683 0.666748 14.955 0.666748 10V1.66667C0.666748 0.746667 1.41341 0 2.33341 0H7.33342ZM25.6667 18.3333C24.7467 18.3333 24.0001 19.08 24.0001 20C24.0001 20.92 24.7467 21.6667 25.6667 21.6667C26.5867 21.6667 27.3334 20.92 27.3334 20C27.3334 19.08 26.5867 18.3333 25.6667 18.3333Z"
+                                                fill="#CD5F37"></path></svg></span></div>
+                                        <div class="services-details-feature-content">
+                                            <h4 class="services-details-feature-title">خدمات 24/7</h4>
+                                            <p>7 روز هفته به صورت 24 ساعته پشتیبانی صورت میگیرد.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="services-details-quote mb-50">
+                            <h4 class="services-details-quote-text">پایه و اساس مجموعه کلینیک ما رضایت مشتری و مشتری
+                                محور بودن آن است.</h4>
+                            <p><b>مهدی تقوی</b> <span>مدیر عامل و موسس کیلینیک </span></p>
+                        </div>
+                        <div class="services-details-benifits mb-50">
+                            <h4 class="services-details-benifits-title">مزایای خدمات ما</h4>
+                            <p>مجموعه کیلینیک ما دارای مزایای بسیاری است که شما را ترقیب به انتخاب ما می کند در ادامه
+                                برخی از آنها را می بینید:</p>
+                            <ul>
+                                <li>جراحان درجه یک با تخصص و مهارت بالا.</li>
+                                <li>آمادگی برای انواع جراحی ها و موارد اورژانسی.</li>
+                                <li>تجربه بالای پزشکان مجموعه.</li>
+                                <li>پزشکان از جدیدترین تجهیزات پیشرفته برای جراحی بیمار استفاده می کنند.</li>
+                                <li>مشتری مداری مجموعه کیلینیک ما.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
