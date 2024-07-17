@@ -1,0 +1,46 @@
+{% extends 'shared/base.html' %}
+
+{% load static %}
+
+{% block title %}
+	تایید کد دریافتی
+{% endblock %}
+
+{% block content %}
+    <section class="tp-login-area pb-140 p-relative z-index-1 fix pt-145">
+        <div class="tp-login-shape">
+            <img class="tp-login-shape-1 d-none d-lg-block" src="{% static 'assets/img/banner/banner-1shape-2.svg' %}"
+                 alt="image"><img
+                class="tp-login-shape-2 d-none d-lg-block"
+                src="{% static 'assets/img/banner/banner-3/banner-3-shape-4.png' %}" alt="image">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="tp-login-wrapper">
+                        <div class="tp-login-top text-center mb-30">
+                            <h3 class="tp-login-title">کد دریافتی را وارد کنید</h3>
+                            <p>کد را دریافت نکرده اید؟ <span><a href="login.html">ارسال مجدد کد</a></span></p>
+                        </div>
+                        <div class="tp-login-option">
+                            <div class="tp-login-mail text-center mb-40"><p>فعال سازی حساب کاربری 
+                            </p></div>
+                            <form action="{% url 'confirm_page' %}" method="post">
+                                <div class="tp-login-input-wrapper">
+                                    {% csrf_token %}
+                                    <div class="tp-login-input-box">
+                                        <div class="tp-login-input">
+                                            {{confirm_form}}
+                                            {{ confirm_form.email }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tp-login-bottom"><button type="submit" class="tp-login-btn w-100">فعال سازی حساب</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
