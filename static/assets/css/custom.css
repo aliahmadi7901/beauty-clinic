@@ -6,3 +6,17 @@
     text-overflow: initial;
     direction: rtl;
 }
+
+.margin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#image_profile {
+    height: 500px;
+    width: 350px;
+}
+
+#button {
+    margin: 15px;
+}

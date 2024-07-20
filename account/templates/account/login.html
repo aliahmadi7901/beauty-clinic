@@ -20,11 +20,12 @@
                     <div class="tp-login-wrapper">
                         <div class="tp-login-top text-center mb-30">
                             <h3 class="tp-login-title">ورود به حساب کاربری</h3>
-                            <p>حساب کاربری ندارید؟ <span><a href="login.html">ثبت نام کنید</a></span></p>
+                            <p>حساب کاربری ندارید؟ <span><a href="{% url 'register_page' %}">ثبت نام کنید</a></span></p>
+                            <p>رمز عبور خود را فراموش کرده اید؟ <span><a href="{% url 'forgot_page' %}">فراموشی رمز عبور</a></span></p>
                         </div>
                         <div class="tp-login-option">
                             <div class="tp-login-mail text-center mb-40"><p>ورود به حساب</p></div>
-                            <form action="" method="post">
+                            <form action="{% url 'login_page' %}" method="post">
                                 <div class="tp-login-input-wrapper">
                                     {% csrf_token %}
                                     <div class="tp-login-input-box">

@@ -1,0 +1,19 @@
+{% extends 'shared/base.html' %}
+{% load render_partial %}
+
+{% block title %}
+	حساب کاربری
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+        <div class="row">
+            <div class="col-md-4 margin">
+                {% render_partial 'user_panel.views.user_panel_menu' %}
+            </div>
+            <div class="col-md-8 alert alert-info margin">
+                <p>به صفحه حساب کاربری خوش آمدید از بین گزینه های جدول میتوانید اطلاعات حساب خود را مدیریت کنید.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

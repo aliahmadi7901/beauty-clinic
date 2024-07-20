@@ -20,17 +20,19 @@
                     <div class="tp-login-wrapper">
                         <div class="tp-login-top text-center mb-30">
                             <h3 class="tp-login-title">بازیابی رمز عبور</h3>
-                            <p>ثبت نام نکرده اید؟ <span><a href="login.html">ثبت نام</a></span></p>
+                            <p>رمز عبور خود را به یاد آوردید؟ <span><a href="{% url 'login_page' %}">ورود</a></span></p>
                         </div>
                         <div class="tp-login-option">
                             <div class="tp-login-mail text-center mb-40"><p>بازیابی رمز عبور 
                             </p></div>
-                            <form action="" method="post">
+                            <form action="{% url 'forgot_page' %}" method="post">
                                 <div class="tp-login-input-wrapper">
                                     {% csrf_token %}
                                     <div class="tp-login-input-box">
                                         <div class="tp-login-input">
-                                            
+                                            {{ forgot_form.label }}
+                                            {{ forgot_form }}
+                                            {{ forgot_form.errors }}
                                         </div>
                                     </div>
                                 </div>

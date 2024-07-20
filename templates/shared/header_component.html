@@ -26,7 +26,11 @@
                 <div class="row align-items-center">
                     <div class="col-xxl-3 col-xl-2 col-lg-6 col-md-4 col-6">
                         <div class="logo"><a href="index.html"><img src="{% static 'assets/img/logo/logo-white.png' %}"
-                                                                    alt="logo"></a></div>
+                                                                    alt="logo"></a>
+                            <div>{% if request.user.is_superuser or user.is_staff %}
+                                <a href="/admin" class="text-white">صفحه ادمین</a>
+                            {% endif %}</div>
+                        </div>
                     </div>
                     <div class="col-xxl-6 col-xl-7 d-none d-xl-block">
                         <div class="main-menu menu-position">
@@ -37,7 +41,8 @@
                                             <div class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-4">
                                                 <div class="col homemenu active">
                                                     <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-1.jpg' %}" alt=""></div>
+                                                            src="{% static 'assets/img/menu/home-1.jpg' %}" alt="">
+                                                    </div>
                                                     <div class="homemenu-btn"><a class="menu-btn"
                                                                                  href="index.html">نمایش نسخه ی
                                                         نمایشی</a></div>
@@ -51,21 +56,24 @@
                                                 </div>
                                                 <div class="col homemenu">
                                                     <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-2.jpg' %}img/menu/home-3.jpg" alt=""></div>
+                                                            src="{% static 'assets/img/menu/home-2.jpg' %}img/menu/home-3.jpg"
+                                                            alt=""></div>
                                                     <div class="homemenu-btn"><a class="menu-btn"
                                                                                  href="index-3.html">نمایش نسخه ی
                                                         نمایشی</a></div>
                                                 </div>
                                                 <div class="col homemenu">
                                                     <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-4.jpg' %}" alt=""></div>
+                                                            src="{% static 'assets/img/menu/home-4.jpg' %}" alt="">
+                                                    </div>
                                                     <div class="homemenu-btn"><a class="menu-btn"
                                                                                  href="index-4.html">نمایش نسخه ی
                                                         نمایشی</a></div>
                                                 </div>
                                                 <div class="col homemenu">
                                                     <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-5.jpg' %}" alt=""></div>
+                                                            src="{% static 'assets/img/menu/home-5.jpg' %}" alt="">
+                                                    </div>
                                                     <div class="homemenu-btn"><a class="menu-btn"
                                                                                  href="index-5.html">نمایش نسخه ی
                                                         نمایشی</a></div>
@@ -79,7 +87,8 @@
                                                 </div>
                                                 <div class="col homemenu">
                                                     <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-6.jpg' %}img/menu/home-7.jpg" alt=""></div>
+                                                            src="{% static 'assets/img/menu/home-6.jpg' %}img/menu/home-7.jpg"
+                                                            alt=""></div>
                                                     <div class="homemenu-btn"><a class="menu-btn"
                                                                                  href="index-7.html">نمایش نسخه ی
                                                         نمایشی</a></div>
@@ -124,7 +133,15 @@
                                             <li><a href="forgot.html">بازنشانی رمز عبور</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">مخاطب</a></li>
+                                    <li><span href="contact.html">
+                                        {% if request.user.is_authenticated %}
+                                            <a href="{% url 'user_panel' %}" class="text-white">حساب کاربری</a>
+                                        {% else %}
+                                            <a href="{% url 'register_page' %}" class="text-white">ثبت نام |</a>
+                                            <a href="{% url 'login_page' %}" class="text-white">ورود</a>
+                                        {% endif %}
+                                        </span>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -191,8 +208,9 @@
         </div>
         <div class="offcanvas__content">
             <div class="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
-                <div class="offcanvas__logo logo"><a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}"
-                                                                            alt="logo"></a></div>
+                <div class="offcanvas__logo logo"><a href="index.html"><img
+                        src="{% static 'assets/img/logo/logo.png' %}"
+                        alt="logo"></a></div>
             </div>
             <div class="tp-main-menu-mobile"></div>
             <div class="offcanvas__btn"><a href="contact.html" class="tp-btn-offcanvas">شروع شدن<i
