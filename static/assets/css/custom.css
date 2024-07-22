@@ -20,3 +20,12 @@
 #button {
     margin: 15px;
 }
+
+#blog_description {
+    direction: rtl;
+    overflow: auto;
+}
+
+#answer {
+    cursor: pointer;
+}

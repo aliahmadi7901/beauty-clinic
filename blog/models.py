@@ -43,7 +43,11 @@ class BlogComment(models.Model):
         User, on_delete=models.CASCADE, related_name='comments', verbose_name='کاربر'
     )
     comment = models.TextField(verbose_name='نظر')
+    parent = models.ForeignKey(
+        'self', on_delete=models.CASCADE, related_name='childes', verbose_name='والد', null=True, blank=True
+    )
     created_at = jmodels.jDateTimeField(auto_now_add=True, verbose_name='زمان ساخت')
+    is_active = models.BooleanField(default=False, verbose_name="فعال/غیرفعال")
 
     def __str__(self):
         return self.user.get_full_name()

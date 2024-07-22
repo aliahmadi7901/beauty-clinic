@@ -1,8 +1,10 @@
 import random
 
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.shortcuts import render, redirect
+from django.utils.decorators import method_decorator
 from django.views.decorators.http import require_http_methods
 from django.views.generic import View
 
@@ -209,3 +211,10 @@ class ResentCodeRegisterView(View):
             confirm_form = ConfirmationForm(initial={'email': user.email})
             context = {'confirm_form': confirm_form}
             return render(request, 'account/confirm.html', context)
+
+
+@method_decorator(login_required, name='dispatch')
+class LogOut(View):
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        return redirect('login_page')

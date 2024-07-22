@@ -135,7 +135,12 @@
                                     </li>
                                     <li><span href="contact.html">
                                         {% if request.user.is_authenticated %}
-                                            <a href="{% url 'user_panel' %}" class="text-white">حساب کاربری</a>
+                                            <li class="has-dropdown"><a href="{% url 'user_panel' %}">حساب کاربری</a>
+                                            <ul class="tp-submenu">
+                                                <li><a href="{% url 'user_panel' %}">حساب کاربری</a></li>
+                                                <li><a href="{% url 'logout_page' %}">خروج از حساب</a></li>
+                                            </ul>
+                                            </li>
                                         {% else %}
                                             <a href="{% url 'register_page' %}" class="text-white">ثبت نام |</a>
                                             <a href="{% url 'login_page' %}" class="text-white">ورود</a>
