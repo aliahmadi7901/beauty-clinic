@@ -7,7 +7,7 @@ class AboutUs(models.Model):
     image_about_us = models.ImageField(upload_to='about_us', verbose_name='تصویر صفجه درباره ما')
 
     def __str__(self):
-        return self.image_about_us
+        return self.title_about_us
 
     class Meta:
         verbose_name = 'درباره ما'
@@ -40,18 +40,6 @@ class Advantages(models.Model):
         verbose_name = 'مزیت'
         verbose_name_plural = 'مزایا'
 
-
-class HappyCustomers(models.Model):
-    name = models.CharField(max_length=100, verbose_name='نام مشتری')
-    comment = models.TextField(verbose_name='نظر مشتری')
-    city = models.CharField(max_length=100, verbose_name='شهر مشتری')
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        verbose_name = 'مشتری خوشحال'
-        verbose_name_plural = 'مشتریان حوشحال'
 
 
 class Questions(models.Model):

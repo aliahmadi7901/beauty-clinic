@@ -1,0 +1,203 @@
+{% extends 'shared/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    درباره ما
+{% endblock %}
+
+{% block content %}
+    <section class="breadcrumb-area tpbreadcrumb-overlay"
+             data-background="{% static 'assets/img/breadcrumb/breadcrumb-bg-1.jpg' %}"
+    >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="tpbreadcrumb text-center">
+                        <h2 class="tpbreadcrumb-title">درباره ما</h2>
+                        <p>اطلاعات خود را درباره ما افزایش دهید تا با خیالی آسوده ما را انتخاب کنید.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-area pt-145 pb-95">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-7">
+                    <div class="about-inner mb-60">
+                        <div class="tpsection mb-30">
+                            <h2 class="tpsection-title mb-25">{{ about_us.title_about_us }}</h2>
+                            <p>{{ about_us.text_about_us }}</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_364_2683)"><path
+                                        d="M12.0001 0C18.6301 0 24.0001 5.37 24.0001 12C24.0001 18.63 18.6301 24 12.0001 24C5.37006 24 5.59967e-05 18.63 5.59967e-05 12C-0.019944 5.39 5.32006 0.02 11.9301 0C11.9501 0 11.9801 0 12.0001 0Z"
+                                        fill="currentColor"></path><path
+                                        d="M18.6516 8.69027L10.1316 17.2203L5.35156 12.4803L7.30156 10.5703L10.1316 13.3603L16.7016 6.78027L18.6516 8.69027Z"
+                                        fill="white"></path></g><defs><clipPath id="clip0_364_26831"><rect width="24"
+                                                                                                           height="24"
+                                                                                                           fill="white"></rect></clipPath></defs></svg></span>ما
+                                سعی می کنیم شما بهترین ورژن خود را بسازید.
+
+                            </li>
+                            <li>
+                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_364_2683)"><path
+                                        d="M12.0001 0C18.6301 0 24.0001 5.37 24.0001 12C24.0001 18.63 18.6301 24 12.0001 24C5.37006 24 5.59967e-05 18.63 5.59967e-05 12C-0.019944 5.39 5.32006 0.02 11.9301 0C11.9501 0 11.9801 0 12.0001 0Z"
+                                        fill="currentColor"></path><path
+                                        d="M18.6516 8.69027L10.1316 17.2203L5.35156 12.4803L7.30156 10.5703L10.1316 13.3603L16.7016 6.78027L18.6516 8.69027Z"
+                                        fill="white"></path></g><defs><clipPath id="clip0_364_26832"><rect width="24"
+                                                                                                           height="24"
+                                                                                                           fill="white"></rect></clipPath></defs></svg></span>با
+                                زیبایی اعتماد به نفس خود را بالا ببرید.
+
+                            </li>
+                            <li>
+                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_364_2683)"><path
+                                        d="M12.0001 0C18.6301 0 24.0001 5.37 24.0001 12C24.0001 18.63 18.6301 24 12.0001 24C5.37006 24 5.59967e-05 18.63 5.59967e-05 12C-0.019944 5.39 5.32006 0.02 11.9301 0C11.9501 0 11.9801 0 12.0001 0Z"
+                                        fill="currentColor"></path><path
+                                        d="M18.6516 8.69027L10.1316 17.2203L5.35156 12.4803L7.30156 10.5703L10.1316 13.3603L16.7016 6.78027L18.6516 8.69027Z"
+                                        fill="white"></path></g><defs><clipPath id="clip0_364_26833"><rect width="24"
+                                                                                                           height="24"
+                                                                                                           fill="white"></rect></clipPath></defs></svg></span>زیبایی
+                                را از ما بخواهید.
+
+                            </li>
+                            <li>
+                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_364_2683)"><path
+                                        d="M12.0001 0C18.6301 0 24.0001 5.37 24.0001 12C24.0001 18.63 18.6301 24 12.0001 24C5.37006 24 5.59967e-05 18.63 5.59967e-05 12C-0.019944 5.39 5.32006 0.02 11.9301 0C11.9501 0 11.9801 0 12.0001 0Z"
+                                        fill="currentColor"></path><path
+                                        d="M18.6516 8.69027L10.1316 17.2203L5.35156 12.4803L7.30156 10.5703L10.1316 13.3603L16.7016 6.78027L18.6516 8.69027Z"
+                                        fill="white"></path></g><defs><clipPath id="clip0_364_26834"><rect width="24"
+                                                                                                           height="24"
+                                                                                                           fill="white"></rect></clipPath></defs></svg></span>بهترین
+                                تبلیغ ما مشتریانی راضی ما هستند.
+
+                            </li>
+                        </ul>
+                        <div class="about-inner-btn"><a href="contact.html" class="tp-btn">با ما تماس بگیرید</a></div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-5">
+                    <div class="about-inner-wrap text-lg-end mb-60 wow fadeInRight" data-wow-duration="1s"
+                         data-wow-delay=".2s"
+                         style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                        <div class="about-inner-thumb"><img src="{{ about_us.image_about_us.url }}" alt="image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="history-area pb-105">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tpsection text-center mb-65"><h2 class="tpsection-title">تاریخچه رشد ما</h2></div>
+                </div>
+            </div>
+            <div class="history-item-main">
+                <ul>
+                    {% for growth in growth_history %}
+                        <li>
+                            <div class="history-item-meta">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="history-item mb-40 wow fadeInRight" data-wow-duration="1s"
+                                             data-wow-delay=".2s"
+                                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                                            <div class="history-thumb"><img src="{{ growth.image.url }}"
+                                                                            alt="image"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="history-item mb-40">
+                                            <div class="history-item-year text-center"><span>{{ growth.year }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="history-item history-content-box mb-40 wow fadeInLeft"
+                                             data-wow-duration="1s" data-wow-delay=".2s"
+                                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                            <div class="history-item-content">
+                                                <h5 class="history-item-title">{{ growth.title }}</h5>
+                                                <p>{{ growth.text }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="choose-area pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-12">
+                    <div class="choose-inner-thumb text-lg-end mb-50 wow fadeInLeft" data-wow-duration="1s"
+                         data-wow-delay=".4s"
+                         style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <img src="{{ advantages.image_1.url }}" alt=""></div>
+                </div>
+                <div class="col-xl-8 col-lg-12">
+                    <div class="choose-inner-wrap mb-50">
+                        <div class="tpsection mb-50"><h2 class="tpsection-title">چرا کیلینیک زیبایی را انتخاب کنید؟</h2>
+                        </div>
+                        <div class="choose-inner-info d-flex">
+                            <div class="choose-inner-content">
+                                <div class="choose-inner-text"><p>{{ advantages.text }}</p></div>
+                                <div class="about-3-list-item mb-25">
+                                    <div class="about-3-list-icon"><span><svg width="30" height="40" viewBox="0 0 30 40"
+                                                                              fill="none"
+                                                                              xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M28.9954 32.3C28.9554 32.2656 25.1202 28.866 20.8486 24.1272C24.2702 19.614 27.001 14.9616 27.001 11.6C27.001 11.5016 26.9894 11.4044 26.9646 11.3092C25.8374 6.79759 23.3706 0.799988 15.001 0.799988C6.63136 0.799988 4.16456 6.79759 3.03736 11.3092C3.01256 11.4044 3.00096 11.5016 3.00096 11.6C3.00096 14.614 5.01056 18.7204 9.14056 24.1356C4.88176 28.856 1.09096 32.226 1.00656 32.3C0.759357 32.5192 0.611757 32.832 0.602157 33.1624C0.591757 33.494 0.718157 33.814 0.952557 34.0484L5.75256 38.8484C5.98696 39.0828 6.29376 39.2 6.60096 39.2C6.89496 39.2 7.19056 39.092 7.42136 38.8752C7.75136 38.566 11.1374 35.3728 15.0026 31.1112C19.0038 35.5132 22.5426 38.8392 22.581 38.8752C22.8114 39.092 23.107 39.2 23.401 39.2C23.7082 39.2 24.015 39.0828 24.2494 38.8484L29.0494 34.0484C29.2838 33.814 29.4102 33.494 29.3998 33.1624C29.3906 32.832 29.2438 32.5192 28.9954 32.3ZM15.0086 16.94C13.4726 14.8064 12.2214 12.8016 11.2734 10.9396C11.3402 10.82 12.2862 9.19999 15.001 9.19999C17.7594 9.19999 18.697 10.8804 18.7274 10.9368C18.729 10.9396 18.731 10.9416 18.7322 10.944C17.7154 12.942 16.4298 14.9688 15.0086 16.94V16.94ZM20.851 4.96359C20.6638 6.11799 20.303 7.32079 19.819 8.54759C18.923 7.71599 17.4002 6.79999 15.001 6.79999C12.6126 6.79999 11.0846 7.70959 10.187 8.53799C9.68616 7.26639 9.35056 6.07479 9.17136 4.96079C10.5594 3.88159 12.4238 3.19999 15.001 3.19999C17.585 3.19999 19.461 3.87839 20.851 4.96359ZM5.40336 11.7408C5.81016 10.1452 6.34856 8.54359 7.20616 7.16559C8.15576 10.5984 10.263 14.5452 13.5026 18.9484C12.6062 20.1024 11.6826 21.2264 10.7602 22.2984C6.47896 16.6028 5.45616 13.4364 5.40336 11.7408V11.7408ZM6.62216 36.3244L3.54136 33.2436C7.17656 29.892 19.9114 17.5884 22.8094 7.18679C23.6602 8.56039 24.1946 10.154 24.599 11.7408C24.4158 17.9376 12.2918 30.8668 6.62216 36.3244V36.3244ZM23.3834 36.3208C22.0898 35.066 19.4566 32.452 16.6098 29.3076C17.527 28.2572 18.4506 27.1624 19.3494 26.046C22.3642 29.3656 25.0846 31.9676 26.4618 33.2408L23.3834 36.3208Z"
+                                            fill="currentColor"></path></svg></span></div>
+                                    <div class="about-3-list-content">
+                                        <h4 class="about-3-list-title">مراقبت از مشتری</h4>
+                                        <p>تمامی مشتریان ما تحت پشتیبانی و مراقبت مجموعه تا بهبودی کامل هستند.</p>
+                                    </div>
+                                </div>
+                                <div class="about-3-list-item mb-25">
+                                    <div class="about-3-list-icon"><span><svg width="32" height="40" viewBox="0 0 32 40"
+                                                                              fill="none"
+                                                                              xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M16.0004 39.2C15.7684 39.2 15.5364 39.1328 15.3348 38.9984L5.20959 32.2484C2.19799 30.2404 0.400391 26.8812 0.400391 23.2624V7.99999C0.400391 7.33839 0.937191 6.80239 1.59879 6.79999C1.67799 6.79999 9.59199 6.71079 15.152 1.15159C15.6208 0.682788 16.38 0.682788 16.8488 1.15159C22.4328 6.73559 30.3212 6.79999 30.4004 6.79999C31.0632 6.79999 31.6004 7.33719 31.6004 7.99999V23.2624C31.6004 26.8812 29.8028 30.2404 26.7912 32.2484L16.666 38.9984C16.4644 39.1328 16.2324 39.2 16.0004 39.2ZM2.80039 9.13559V23.2624C2.80039 26.0772 4.19919 28.69 6.54119 30.2516L16.0004 36.558L25.4596 30.2516C27.8016 28.69 29.2004 26.0772 29.2004 23.2624V9.13559C26.708 8.91479 20.8344 7.94079 16.0004 3.64839C11.1664 7.94079 5.29279 8.91479 2.80039 9.13559ZM22.0004 18.8H17.2004V14C17.2004 13.3372 16.6632 12.8 16.0004 12.8C15.3376 12.8 14.8004 13.3372 14.8004 14V18.8H10.0004C9.33759 18.8 8.80039 19.3372 8.80039 20C8.80039 20.6628 9.33759 21.2 10.0004 21.2H14.8004V26C14.8004 26.6628 15.3376 27.2 16.0004 27.2C16.6632 27.2 17.2004 26.6628 17.2004 26V21.2H22.0004C22.6632 21.2 23.2004 20.6628 23.2004 20C23.2004 19.3372 22.6632 18.8 22.0004 18.8Z"
+                                            fill="currentColor"></path></svg></span></div>
+                                    <div class="about-3-list-content">
+                                        <h4 class="about-3-list-title">بهترین در ایران و خاورمیانه</h4>
+                                        <p>با خیال راحت به مجموعه با اعتماد کنید. بهترین ها اتفاقی بهترین نشده اند.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choose-inner-sm-thumb wow fadeInRight" data-wow-duration="1s"
+                                 data-wow-delay=".4s"
+                                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInRight;">
+                                <img src="{{ advantages.image_2.url }}" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-area theme-bg-7 pt-140 pb-105">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="tpsection mb-65">
+                        <div class="tpsection-sub-title"><span>تیم ما</span></div>
+                        <h2 class="tpsection-title"><a href="{% url 'team_page' %}">برای مشاهده پزشکان, جراحان و اعضای
+                            تیم ما اینجا کلیک کنید.</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
