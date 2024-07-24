@@ -28,4 +28,5 @@ urlpatterns = [
     path('user-panel/', include('user_panel.urls')),
     path('blogs/', include('blog.urls')),
     path('about-us/', include('about_us.urls')),
+    path('contact-us', include('contact_us.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
