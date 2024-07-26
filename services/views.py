@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 
@@ -9,6 +10,14 @@ class ServicesListView(ListView):
     context_object_name = 'services'
     template_name = 'services/services.html'
     paginate_by = 6
+
+    def get_queryset(self):
+        queryset = super(ServicesListView, self).get_queryset()
+        title = self.request.GET.get('search', None)
+        if title is not None:
+            queryset = queryset.filter(title__icontains=title)
+
+        return queryset
 
 
 class ServicesDetailView(DetailView):

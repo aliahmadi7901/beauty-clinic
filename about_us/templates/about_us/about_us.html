@@ -80,7 +80,7 @@
 
                             </li>
                         </ul>
-                        <div class="about-inner-btn"><a href="contact.html" class="tp-btn">با ما تماس بگیرید</a></div>
+                        <div class="about-inner-btn"><a href="{% url 'contact_us' %}" class="tp-btn">با ما تماس بگیرید</a></div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-5">
@@ -187,17 +187,40 @@
             </div>
         </div>
     </section>
-    <section class="team-area theme-bg-7 pt-140 pb-105">
+    <section class="team-area pt-145 pb-85">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9">
-                    <div class="tpsection mb-65">
-                        <div class="tpsection-sub-title"><span>تیم ما</span></div>
-                        <h2 class="tpsection-title"><a href="{% url 'team_page' %}">برای مشاهده پزشکان, جراحان و اعضای
-                            تیم ما اینجا کلیک کنید.</a></h2>
+                <h1>برخی از جراحان ما</h1>
+                <hr>
+                {% for doctor in doctors %}
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="team-3 p-relative text-center mb-55">
+                            <div class="team-3-thumb mb-20">
+                                <div class="team-3-thumb-main p-relative fix">
+                                    <a href="{% url 'doctor_page' doctor.id %}"><img src="{{ doctor.image.url }}" alt="doctor"></a>
+                                    <div class="team-3-shape"><i>
+                                        <svg width="362" height="189" viewBox="0 0 362 189" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0V7.92377C0 107.931 81.04 189 181 189C280.96 189 362 107.921 362 7.91377V0L328.785 10.2766C232.513 40.0623 129.487 40.0624 33.2155 10.2766L0 0Z"
+                                                  fill="currentColor"></path>
+                                        </svg>
+                                    </i></div>
+                                </div>
+                                <div class="team-3-social">
+                                    <b><a href="tel:{{ doctor.office_phone }}">تلفن
+                                        مطب: {{ doctor.office_phone }}</a></b>
+                                </div>
+                            </div>
+                            <div class="team-3-content">
+                                <h4 class="team-3-title"><a href="{% url 'doctor_page' doctor.id %}">{{ doctor.name }}</a></h4>
+                                <span>{{ doctor.skill }}</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
+        <h4 class="alert alert-info col-sm-4 offset-4" id="team_link"><a href="{% url 'team_page' %}">مشاهده همه جراحان و پزشکان مجموعه...</a></h4>
+            <hr>
     </section>
 {% endblock %}

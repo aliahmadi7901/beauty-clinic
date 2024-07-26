@@ -20,13 +20,64 @@
     </button>
 </div>
 <header>
+    <div class="offcanvas__area">
+        <div class="offcanvas__wrapper">
+            <div class="offcanvas__close">
+                <button class="offcanvas__close-btn offcanvas-close-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="offcanvas__content">
+                <div class="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__logo logo"><a href="{% url 'home_page' %}"><img
+                            src="{{ site_setting.logo_footer.url }}"
+                            alt="logo"></a></div>
+                </div>
+                <div class="tp-main-menu-mobile">
+                    <nav id="mobile-menu" class="tp-main-menu-content">
+                        <ul>
+                            <li><a href="{% url 'home_page' %}">صفحه اصلی</a>
+                            </li>
+                            <li><a href="{% url 'about_us_page' %}">درباره ما</a></li>
+                            <li class="has-dropdown"><a href="#">صفحات
+                                <button class="dropdown-toggle-btn"><i class="fa-regular fa-angle-right"></i></button>
+                            </a>
+                                <ul class="tp-submenu">
+                                    <li><a href="{% url 'services_page' %}">خدمات</a></li>
+                                    <li><a href="{% url 'team_page' %}">پزشکان</a></li>
+                                    <li><a href="{% url 'questions_page' %}">سوالات متداول</a></li>
+                                    <li><a href="{% url 'blog_list' %}">مقالات</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a href="{% url 'user_panel' %}">حساب کاربری
+                                <button class="dropdown-toggle-btn"><i class="fa-regular fa-angle-right"></i></button>
+                            </a>
+                                <ul class="tp-submenu">
+                                    <li><a href="{% url 'user_panel' %}">حساب کاربری</a></li>
+                                    <li><a href="{% url 'logout_page' %}">خروج از حساب</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'contact_us' %}">تماس با ما</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="side-info-contact"><span>ما اینجا هستیم</span>
+                    <p>{{ contact_us.address }}</p></div>
+            </div>
+        </div>
+    </div>
     <div class="header__area header-1 theme-bg tp-header-height">
         <div class="header__bottom-wrap theme-bg" id="header-sticky">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xxl-3 col-xl-2 col-lg-6 col-md-4 col-6">
-                        <div class="logo"><a href="index.html"><img src="{% static 'assets/img/logo/logo-white.png' %}"
-                                                                    alt="logo"></a>
+                        <div class="logo"><a href="{% url 'home_page' %}"><img src="{{ site_setting.logo_site.url }}"
+                                                                               alt="logo"></a>
                             <div>{% if request.user.is_superuser or user.is_staff %}
                                 <a href="/admin" class="text-white">صفحه ادمین</a>
                             {% endif %}</div>
@@ -36,106 +87,24 @@
                         <div class="main-menu menu-position">
                             <nav id="mobile-menu" class="tp-main-menu-content">
                                 <ul>
-                                    <li class="has-dropdown"><a href="index.html">صفحه اصلی</a>
-                                        <div class="tp-submenu has-homemenu">
-                                            <div class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-4">
-                                                <div class="col homemenu active">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-1.jpg' %}" alt="">
-                                                    </div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/ ' %}" alt=""></div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index-2.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-2.jpg' %}img/menu/home-3.jpg"
-                                                            alt=""></div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index-3.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-4.jpg' %}" alt="">
-                                                    </div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index-4.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-5.jpg' %}" alt="">
-                                                    </div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index-5.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'img/menu/home-7.jpg' %}" alt=""></div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index-6.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb"><img
-                                                            src="{% static 'assets/img/menu/home-6.jpg' %}img/menu/home-7.jpg"
-                                                            alt=""></div>
-                                                    <div class="homemenu-btn"><a class="menu-btn"
-                                                                                 href="index-7.html">نمایش نسخه ی
-                                                        نمایشی</a></div>
-                                                </div>
-                                                <div class="col homemenu">
-                                                    <div class="homemenu-thumb comming-demo"><img
-                                                            src="{% static 'assets/' %}" alt=""></div>
-                                                    <div class="homemenu-btn comming-btn"><a class="menu-btn"
-                                                                                             href="comming-soon.html">بالا
-                                                        آمدن</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="has-dropdown">
+                                        <a href="{% url 'home_page' %}">صفحه اصلی</a>
                                     </li>
-                                    <li><a href="about.html">در باره</a></li>
+                                    <li><a href="{% url 'about_us_page' %}">درباره ما</a></li>
                                     <li class="has-dropdown"><a href="#">صفحات</a>
                                         <ul class="tp-submenu">
-                                            <li><a href="case.html">مورد</a></li>
-                                            <li><a href="case-details.html">جزئیات مورد</a></li>
-                                            <li><a href="services.html">خدمات</a></li>
-                                            <li><a href="service-details.html">جزئیات خدمات</a></li>
-                                            <li><a href="team.html">تیم</a></li>
-                                            <li><a href="team-details.html">جزئیات تیم</a></li>
-                                            <li><a href="pricing.html">قیمت گذاری</a></li>
-                                            <li><a href="faq.html">سوالات متداول</a></li>
-                                            <li><a href="appointment.html">وقت ملاقات</a></li>
-                                            <li><a href="blog.html">وبلاگ</a></li>
-                                            <li><a href="blog-grid.html">شبکه وبلاگ</a></li>
-                                            <li><a href="blog-details.html">جزئیات وبلاگ</a></li>
+                                            <li><a href="{% url 'services_page' %}">خدمات ما</a></li>
+                                            <li><a href="{% url 'team_page' %}">تیم ما</a></li>
+                                            <li><a href="{% url 'questions_page' %}">سوالات متداول</a></li>
+                                            <li><a href="{% url 'blog_list' %}">مقالات</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-dropdown"><a href="shop.html">فروشگاه</a>
-                                        <ul class="tp-submenu">
-                                            <li><a href="shop.html">فروشگاه</a></li>
-                                            <li><a href="shop-details.html">جزئیات فروشگاه</a></li>
-                                            <li><a href="cart.html">سبد خرید</a></li>
-                                            <li><a href="checkout.html">وارسی</a></li>
-                                            <li><a href="wishlist.html">لیست علاقه مندیها</a></li>
-                                            <li><a href="order.html">سفارش</a></li>
-                                            <li><a href="login.html">وارد شدن</a></li>
-                                            <li><a href="register.html">ثبت نام</a></li>
-                                            <li><a href="forgot.html">بازنشانی رمز عبور</a></li>
-                                        </ul>
+                                    <li class="has-dropdown">
+                                        <a href="{% url 'contact_us' %}">تماس باما</a>
                                     </li>
                                     <li><span href="contact.html">
                                         {% if request.user.is_authenticated %}
-                                            <li class="has-dropdown"><a href="{% url 'user_panel' %}">حساب کاربری</a>
+                                            <li class="has-dropdown"><a href="{% url 'user_panel' %}">حساب کاربر</a>
                                             <ul class="tp-submenu">
                                                 <li><a href="{% url 'user_panel' %}">حساب کاربری</a></li>
                                                 <li><a href="{% url 'logout_page' %}">خروج از حساب</a></li>
@@ -166,7 +135,7 @@
                                                   stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                     </i></div>
-                                    <div class="header__phone"><a href="tel:0123456789"><i>
+                                    <div class="header__phone"><a href="tel:{{ contact_us.phone_1 }}"><i>
                                         <svg width="22"
                                              height="22" viewbox="0 0 22 22" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
@@ -184,12 +153,11 @@
                                         </svg>
                                     </i></a></div>
                                     <div class="header__contact"><span>اکنون با ما تماس بگیرید</span><a
-                                            href="tel:0123456789">(839) 367 025</a></div>
+                                            href="tel:{{ contact_us.phone_1 }}">{{ contact_us.phone_1 }}</a></div>
                                 </div>
                             </div>
                             <div class="offcanvas-btn d-xl-none ml-20">
-                                <button class="offcanvas-open-btn"><i
-                                        class="fa-solid fa-bars"></i></button>
+                                <button class="offcanvas-open-btn"><i class="fa-solid fa-bars"></i></button>
                             </div>
                         </div>
                     </div>
@@ -198,38 +166,6 @@
         </div>
     </div>
 </header>
-<div class="offcanvas__area">
-    <div class="offcanvas__wrapper">
-        <div class="offcanvas__close">
-            <button class="offcanvas__close-btn offcanvas-close-btn">
-                <svg width="12"
-                     height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                    <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="offcanvas__content">
-            <div class="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
-                <div class="offcanvas__logo logo"><a href="index.html"><img
-                        src="{% static 'assets/img/logo/logo.png' %}"
-                        alt="logo"></a></div>
-            </div>
-            <div class="tp-main-menu-mobile"></div>
-            <div class="offcanvas__btn"><a href="contact.html" class="tp-btn-offcanvas">شروع شدن<i
-                    class="fa-regular fa-chevron-right"></i></a></div>
-            <div class="side-info-contact"><span>ما اینجا هستیم</span>
-                <p>1489 خیابان لنگلی<br>گرند فورک Afb، شمال.</p>
-            </div>
-            <div class="side-info-social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i
-                    class="fa-brands fa-twitter"></i></a><a href="#"><i
-                    class="fa-brands fa-pinterest-p"></i></a><a href="#"><i
-                    class="fa-solid fa-paper-plane"></i></a></div>
-        </div>
-    </div>
-</div>
 <div class="body-overlay"></div>
 <div class="tpsearchbar tp-sidebar-area">
     <button class="tpsearchbar__close"><i class="fal fa-times"></i></button>
@@ -237,10 +173,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-12 pt-100 pb-100">
-                    <h2 class="tpsearchbar__title">دنبال چی میگردی؟</h2>
+                    <h2 class="tpsearchbar__title">از بین خدمات ما جستجو کنید...</h2>
                     <div class="tpsearchbar__form">
-                        <form action="#"><input type="text" name="search" placeholder="جستجوی محصول...">
-                            <button
+                        <form action="{% url 'services_page' %}" method="get"><input type="text" name="search"
+                                                                                      placeholder="جستجوی خدمات...">
+                            {% csrf_token %}
+                            <button type="submit"
                                     class="tpsearchbar__search-btn"><i class="fal fa-search"></i></button>
                         </form>
                     </div>

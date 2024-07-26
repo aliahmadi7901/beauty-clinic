@@ -213,7 +213,7 @@
                                 <ul>
                                     {% for category in categories %}
                                         <li>
-                                            <a href="blog-details.html">{{ category.title }}<span>({{ category.blogs.count }})</span></a>
+                                            <a href="{% url 'blog_category' category.title %}">{{ category.title }}<span>({{ category.blogs.count }})</span></a>
                                         </li>
                                     {% endfor %}
                                 </ul>

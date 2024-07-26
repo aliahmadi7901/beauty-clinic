@@ -29,3 +29,15 @@
 #answer {
     cursor: pointer;
 }
+
+#developer {
+    color: #fa4832;
+}
+
+#navbar {
+    margin-left: 50px;
+}
+
+#blog_current {
+    height: 300px;
+}

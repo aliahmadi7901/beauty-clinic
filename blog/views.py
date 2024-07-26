@@ -18,6 +18,12 @@ class BlogListView(ListView):
         if search:
             queryset = queryset.filter(title__icontains=search, active=True)
             return queryset
+
+        category_title = self.kwargs.get('title', None)
+        if category_title:
+            queryset = queryset.filter(category__title__iexact=category_title, active=True)
+            return queryset
+
         queryset = queryset.filter(active=True)
         return queryset
 

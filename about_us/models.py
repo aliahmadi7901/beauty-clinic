@@ -41,7 +41,6 @@ class Advantages(models.Model):
         verbose_name_plural = 'مزایا'
 
 
-
 class Questions(models.Model):
     question = models.TextField(verbose_name='سوال متدوال')
     answer = models.TextField(verbose_name='پاسخ سوال متدوال')
